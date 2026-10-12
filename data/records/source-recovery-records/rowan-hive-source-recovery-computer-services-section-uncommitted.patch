@@ -1,0 +1,36 @@
+diff --git a/services/blockchain-services-section/services/hive-engineering-services-section/services/hive-fleet-observation-service/src/fleet-observation.mjs b/services/blockchain-services-section/services/hive-engineering-services-section/services/hive-fleet-observation-service/src/fleet-observation.mjs
+index a09d3f0..35edb0f 100644
+--- a/services/blockchain-services-section/services/hive-engineering-services-section/services/hive-fleet-observation-service/src/fleet-observation.mjs
++++ b/services/blockchain-services-section/services/hive-engineering-services-section/services/hive-fleet-observation-service/src/fleet-observation.mjs
+@@ -12,20 +12,21 @@ export function projectHiveFleetObservation(tick, tickDigest) {
+   const accounts = (tick.accounts ?? []).map((account) => ({
+     account: account.account,
+     liquid: { hive: quantity(account.trading?.hive, "HIVE"), hbd: quantity(account.trading?.hbd, "HBD") },
+-    voting: { planned: account.voting?.votesPlanned ?? 0, broadcast: account.voting?.votesBroadcast ?? 0,
+-      skipped: account.voting?.votesSkipped ?? 0, errors: account.voting?.execution?.errors ?? 0 },
+-    trading: { mode: account.trading?.mode ?? "unknown", planned: account.trading?.tradesPlanned ?? 0,
+-      executed: account.trading?.tradesExecuted ?? 0, liquidityPlanned: account.trading?.lpPlanned ?? 0,
+-      liquidityExecuted: account.trading?.lpExecuted ?? 0, savingsExecuted: account.trading?.savingsExecuted ?? false },
++    voting: { planned: account.voting?.votesPlanned ?? null, broadcast: account.voting?.votesBroadcast ?? null,
++      skipped: account.voting?.votesSkipped ?? null, errors: account.voting?.execution?.errors ?? null },
++    trading: { mode: account.trading?.mode ?? "unknown", planned: account.trading?.tradesPlanned ?? null,
++      executed: account.trading?.tradesExecuted ?? null, liquidityPlanned: account.trading?.lpPlanned ?? null,
++      liquidityExecuted: account.trading?.lpExecuted ?? null, savingsExecuted: account.trading?.savingsExecuted ?? null },
+   })).sort((left, right) => left.account.localeCompare(right.account));
+   const sum = (field) => Array.isArray(tick.accounts) && accounts.every((account) => account.liquid[field] !== null)
+     ? addDecimalStrings(["0", ...accounts.map((account) => account.liquid[field])]) : null;
++  const observedSum = (a, b) => a === null || b === null ? null : a + b;
+   const execution = accounts.reduce((totals, account) => ({
+-    votesBroadcast: totals.votesBroadcast + account.voting.broadcast,
+-    votesSkipped: totals.votesSkipped + account.voting.skipped,
+-    voteErrors: totals.voteErrors + account.voting.errors,
+-    tradesExecuted: totals.tradesExecuted + account.trading.executed,
+-    liquidityMovesExecuted: totals.liquidityMovesExecuted + account.trading.liquidityExecuted,
++    votesBroadcast: observedSum(totals.votesBroadcast, account.voting.broadcast),
++    votesSkipped: observedSum(totals.votesSkipped, account.voting.skipped),
++    voteErrors: observedSum(totals.voteErrors, account.voting.errors),
++    tradesExecuted: observedSum(totals.tradesExecuted, account.trading.executed),
++    liquidityMovesExecuted: observedSum(totals.liquidityMovesExecuted, account.trading.liquidityExecuted),
+   }), { votesBroadcast: 0, votesSkipped: 0, voteErrors: 0, tradesExecuted: 0, liquidityMovesExecuted: 0 });
+   return { type: "HiveFleetCustodyObservation", sourceTick: { id: tickDigest, settledAt: tick.ts },
+     fleet: { running: tick.running === true, liveFlag: tick.live === true,

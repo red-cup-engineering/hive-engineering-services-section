@@ -1,0 +1,35 @@
+{
+  "name": "@red-cup-engineering/observe-hive-internal-market-service",
+  "version": "0.1.0",
+  "description": "Observes the Hive base-layer internal HIVE/HBD market book, spread, and depth cross-checked across two public nodes, the recent ticker and volume, the feed's median price, the external HIVE and HBD USD prices, the resulting haircut, and the HBD conversion queue, read-only.",
+  "type": "module",
+  "private": false,
+  "license": "UNLICENSED",
+  "exports": {
+    ".": "./scripts/observe-hive-internal-market.mjs"
+  },
+  "bin": {
+    "observe-hive-internal-market": "scripts/observe-hive-internal-market.mjs"
+  },
+  "files": [
+    "scripts",
+    "README.md",
+    "package.json"
+  ],
+  "dependencies": {
+    "@red-cup-engineering/metrologic": "workspace:*",
+    "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/farolfi": "workspace:*",
+    "@red-cup-engineering/hive-blockchain-client-service": "workspace:*",
+    "@red-cup-engineering/javascript-node-services-section": "workspace:*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "check": "node --check scripts/observe-hive-internal-market.mjs",
+    "test": "node --test test/*.test.mjs",
+    "pack:dry-run": "npm pack --dry-run --ignore-scripts"
+  },
+  "engines": {
+    "node": ">=24.2.0"
+  }
+}

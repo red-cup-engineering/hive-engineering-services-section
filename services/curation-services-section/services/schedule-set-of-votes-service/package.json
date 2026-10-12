@@ -1,0 +1,32 @@
+{
+  "name": "@red-cup-engineering/schedule-set-of-votes-service",
+  "version": "0.2.0",
+  "description": "Schedules a day's Hive curation votes for one account, weighting and budgeting candidate posts by policy.",
+  "type": "module",
+  "private": false,
+  "license": "UNLICENSED",
+  "exports": "./scripts/schedule-set-of-votes.mjs",
+  "bin": {
+    "schedule-set-of-votes": "scripts/schedule-set-of-votes.mjs"
+  },
+  "files": [
+    "scripts",
+    "README.md",
+    "package.json"
+  ],
+  "dependencies": {
+    "@red-cup-engineering/hive-computing-service": "workspace:*",
+    "@red-cup-engineering/metrologic": "workspace:*",
+    "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/javascript-node-services-section": "workspace:*",
+    "@red-cup-engineering/exact-number-data-service": "workspace:*"
+  },
+  "scripts": {
+    "check": "node --check scripts/schedule-set-of-votes.mjs",
+    "test": "node --test test/*.test.mjs",
+    "pack:dry-run": "npm pack --dry-run --ignore-scripts"
+  },
+  "engines": {
+    "node": ">=24.2.0"
+  }
+}

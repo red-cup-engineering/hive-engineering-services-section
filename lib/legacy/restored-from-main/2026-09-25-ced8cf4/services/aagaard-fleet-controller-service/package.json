@@ -1,0 +1,33 @@
+{
+  "name": "@emsenn/aagaard",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Aagaard — autonomous on-chain agentic operations platform for the Hive wallet fleet: gated voting (curation knapsack + spectral alpha radar) and trading lanes over the upstream Hive computing pipeline, with posting and gaming prepared but locked.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "serve": "node src/serve.mjs"
+  },
+  "exports": {
+    "./serve": "./src/serve.mjs",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@emsenn/computing-with-hive": "workspace:*",
+    "@emsenn/propolis": "workspace:*",
+    "@red-cup-engineering/computer-data-engineering-services-section": "0.1.0",
+    "@red-cup-engineering/computer-system-engine": "0.1.0",
+    "@red-cup-engineering/computer-web-server": "0.6.0",
+    "@red-cup-engineering/feltos": "0.18.3",
+    "@red-cup-engineering/http-services-section": "0.6.0",
+    "@red-cup-engineering/oauth-services-section": "0.1.0",
+    "@red-cup-engineering/relating": "0.10.1",
+    "@red-cup-engineering/serve-google-oauth-service": "0.1.5",
+    "@red-cup-engineering/eavt": "0.10.4",
+    "@red-cup-engineering/hive-fleet-operations-service": "0.4.10",
+    "@red-cup-engineering/hive-blockchain-client-service": "0.1.2",
+    "@red-cup-engineering/key-management-services-section": "0.5.2"
+  },
+  "sideEffects": false
+}

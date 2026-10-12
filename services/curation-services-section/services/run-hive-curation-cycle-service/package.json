@@ -1,0 +1,44 @@
+{
+  "name": "@red-cup-engineering/run-hive-curation-cycle-service",
+  "version": "0.1.1",
+  "description": "Runs bounded Hive curation cycles from two-node witnessed decision inputs, proving each submitted vote on chain before treating it as executed.",
+  "type": "module",
+  "private": false,
+  "license": "UNLICENSED",
+  "exports": {
+    ".": "./scripts/run-hive-curation-cycle.mjs",
+    "./operations": "./src/operations.mjs",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "run-hive-curation-cycle": "scripts/run-hive-curation-cycle.mjs",
+    "execute-hive-curation-cycle": "scripts/execute-hive-curation-cycle.mjs"
+  },
+  "files": [
+    "scripts",
+    "README.md",
+    "package.json",
+    "src"
+  ],
+  "dependencies": {
+    "@red-cup-engineering/cast-set-of-votes-service": "workspace:*",
+    "@red-cup-engineering/computer-code-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/semiotic-eavt-services-section": "workspace:*",
+    "@red-cup-engineering/eavt-services-section": "workspace:*",
+    "@red-cup-engineering/javascript-node-services-section": "workspace:*",
+    "@red-cup-engineering/observe-tribe-curation-yield-service": "workspace:*",
+    "@red-cup-engineering/schedule-set-of-votes-service": "workspace:*",
+    "@red-cup-engineering/hive-blockchain-client-service": "workspace:*",
+    "@red-cup-engineering/witness-journal-document-service": "workspace:*",
+    "@red-cup-engineering/hive-fleet-operations-service": "workspace:*",
+    "@red-cup-engineering/computer-system-engine": "workspace:*"
+  },
+  "scripts": {
+    "check": "node --check scripts/run-hive-curation-cycle.mjs",
+    "test": "node --test test/*.test.mjs",
+    "pack:dry-run": "npm pack --dry-run --ignore-scripts"
+  },
+  "engines": {
+    "node": ">=24.2.0"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@red-cup-engineering/hive-account-provisioning-service",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Creates Hive accounts the house holds: generates a master password, keeps it and the derived role keys in the Hive key vault (local or on another host over ssh) and sealed in its replica before broadcasting, pays the chain's creation fee from a house creator account, keeps the public profile in line, and delegates resource credits within a declared ceiling when the account cannot afford a day's comments.",
+  "exports": {
+    ".": "./src/provision.mjs",
+    "./vault": "./src/vault.mjs",
+    "./replica": "./src/replica.mjs",
+    "./resource-credits": "./src/resource-credits.mjs"
+  },
+  "bin": {
+    "hive-account": "scripts/hive-account.mjs"
+  },
+  "files": [
+    "src",
+    "scripts"
+  ],
+  "dependencies": {
+    "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/hive-blockchain-client-service": "workspace:*"
+  },
+  "scripts": {
+    "check": "for f in src/*.mjs scripts/*.mjs test/*.mjs; do node --check \"$f\" || exit 1; done",
+    "test": "node --test test/*.test.mjs",
+    "verify": "npm run check && npm test"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "license": "UNLICENSED"
+}

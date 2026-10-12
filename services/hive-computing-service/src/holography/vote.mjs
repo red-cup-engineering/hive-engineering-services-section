@@ -1,0 +1,3 @@
+import { hiveUnvoteUtterance, hiveVoteUtterance } from "../computing/social.mjs";
+import { projector, numberField, recordOf, stringField } from "./resource.mjs";
+export const hiveVoteProjector=projector("hive.resource.vote",resource=>{const r=recordOf(resource);return r!==undefined&&stringField(r,"voter")!==undefined&&stringField(r,"author")!==undefined&&stringField(r,"permlink")!==undefined;},resource=>{const r=recordOf(resource)??{};const voter=stringField(r,"voter"),author=stringField(r,"author"),permlink=stringField(r,"permlink");return !voter||!author||!permlink?[]:Object.freeze([(numberField(r,"weight")??1)===0?hiveUnvoteUtterance(voter,author,permlink):hiveVoteUtterance(voter,author,permlink)]);});

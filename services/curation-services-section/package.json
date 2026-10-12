@@ -1,0 +1,7 @@
+{
+  "name": "@red-cup-engineering/curation-services-section",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Red Cup Engineering service section for Hive-Engine tribe curation yield, vote scheduling, and vote casting.",
+  "license": "UNLICENSED"
+}

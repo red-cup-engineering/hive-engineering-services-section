@@ -1,0 +1,35 @@
+{
+  "name": "@red-cup-engineering/cast-set-of-votes-service",
+  "version": "0.1.0",
+  "description": "Submits bounded Hive curation votes through the fleet signer and retains a vote as executed only after two public nodes confirm its exact chain operation.",
+  "type": "module",
+  "private": false,
+  "license": "UNLICENSED",
+  "exports": "./scripts/cast-set-of-votes.mjs",
+  "bin": {
+    "cast-set-of-votes": "scripts/cast-set-of-votes.mjs"
+  },
+  "files": [
+    "scripts",
+    "README.md",
+    "package.json"
+  ],
+  "dependencies": {
+    "@red-cup-engineering/computer-code-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/semiotic-eavt-services-section": "workspace:*",
+    "@red-cup-engineering/eavt-services-section": "workspace:*",
+    "@red-cup-engineering/hive-blockchain-client-service": "workspace:*",
+    "@red-cup-engineering/javascript-node-services-section": "workspace:*",
+    "@red-cup-engineering/witness-journal-document-service": "workspace:*",
+    "@red-cup-engineering/hive-fleet-operations-service": "workspace:*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "check": "node --check scripts/cast-set-of-votes.mjs",
+    "test": "node --test test/*.test.mjs",
+    "pack:dry-run": "npm pack --dry-run --ignore-scripts"
+  },
+  "engines": {
+    "node": ">=24.2.0"
+  }
+}

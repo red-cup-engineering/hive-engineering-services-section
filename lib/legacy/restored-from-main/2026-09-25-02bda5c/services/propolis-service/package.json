@@ -1,0 +1,24 @@
+{
+  "name": "@emsenn/propolis",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Propolis service for Hive account fleet surfaces.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "exports": {
+    ".": "./src/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@red-cup-engineering/computer-web-server": "0.6.0",
+    "@red-cup-engineering/http-services-section": "0.6.0",
+    "@red-cup-engineering/key-management-services-section": "0.5.2"
+  },
+  "sideEffects": false,
+  "files": [
+    "src",
+    "package.json"
+  ]
+}

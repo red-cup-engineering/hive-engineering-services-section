@@ -1,0 +1,425 @@
+{
+  "kind": "aagaard.fleet-tick",
+  "ts": "2026-07-18T05:02:12.085Z",
+  "running": true,
+  "live": true,
+  "enabled": [
+    "voting"
+  ],
+  "accounts": [
+    {
+      "account": "emsenn0",
+      "voting": {
+        "currentMana": "1036253878178",
+        "maxMana": "1037216664944",
+        "votesPlanned": 0,
+        "votesBroadcast": 0,
+        "votesDryRun": 0,
+        "errors": 0,
+        "strategy": {
+          "archetype": "curator",
+          "disposition": "Curates its own following feed and the main field with a balanced, quality-first eye.",
+          "feeds": [
+            "main",
+            "own-feed"
+          ],
+          "fieldSize": 12,
+          "emphasisHits": 0,
+          "votingPowerBps": 9990,
+          "eligibleCount": 8,
+          "acted": false,
+          "decision": "curator waited — best α*=0.00 below conviction bar 0.00 — waiting for a clearer opportunity"
+        },
+        "radar": {
+          "posts": 12,
+          "mispricingEnergy": 26,
+          "components": 9,
+          "durable": true,
+          "topSinks": [
+            "ecency.waves/waves-20260717smpn7a",
+            "wiseagent/movie-review-the-odyssey-2026-mrp232vz"
+          ]
+        },
+        "intelligence": {
+          "fiedler": 1,
+          "decayHalfLife": 0.6931471805599453,
+          "cartelCycles": 692,
+          "bridges": 8,
+          "topByExpectedAlpha": [
+            "wiseagent/movie-review-the-odyssey-2026-mrp232vz E[α]=1.65",
+            "ecency.waves/waves-20260717smpn7a E[α]=0.03",
+            "roelandp/hivefest-xi-goes-swarm-self-organized-one-weekend-bcn-lets-do-this E[α]=0.00",
+            "acidyo/the-new-posh E[α]=0.00",
+            "peak.snaps/snap-container-1784324880 E[α]=0.00"
+          ],
+          "cartelTrailsFlagged": 2
+        }
+      },
+      "posting": {
+        "draftsPrepared": 1,
+        "locked": true
+      },
+      "gaming": {
+        "gamesDetected": 0,
+        "games": [],
+        "locked": true
+      },
+      "incentive": {
+        "offersFound": 2,
+        "nominated": 1,
+        "autoExecuted": 0,
+        "topOffers": [
+          "roelandp/hivefest-xi-goes-swarm-self-organized-one-weekend-bcn-lets-do-this EV=-0.100 [comment]"
+        ]
+      }
+    },
+    {
+      "account": "essiebee",
+      "voting": {
+        "currentMana": "5085739508",
+        "maxMana": "5085739508",
+        "votesPlanned": 0,
+        "votesBroadcast": 0,
+        "votesDryRun": 0,
+        "errors": 0,
+        "strategy": {
+          "archetype": "gardener",
+          "disposition": "Tends gaming communities — favours durable, well-discussed posts that keep the board healthy.",
+          "feeds": [
+            "community:hive-140217",
+            "community:hive-13323",
+            "#gaming",
+            "#splinterlands",
+            "#play2earn"
+          ],
+          "fieldSize": 36,
+          "emphasisHits": 27,
+          "votingPowerBps": 10000,
+          "eligibleCount": 31,
+          "acted": false,
+          "decision": "gardener waited — a full vote at 100% power is still dust — Hive Power too low to matter"
+        },
+        "radar": {
+          "posts": 36,
+          "mispricingEnergy": 3.2243589743589745,
+          "components": 11,
+          "durable": true,
+          "topSinks": [
+            "culebro/triple-threat-with-10-foundation",
+            "crypto-hokage/splinterlands-pit-challenges",
+            "scfather/peakmonster-hurricane-operate-report-235--brawl-result-15-7-2026",
+            "psyberkid/fithe-bladestone-a-unique-warrior",
+            "takeru255/gold-arrived-at-the-death"
+          ]
+        },
+        "intelligence": {
+          "fiedler": 0.9999999999999974,
+          "decayHalfLife": 0.6931471805599471,
+          "cartelCycles": 528,
+          "bridges": 8,
+          "topByExpectedAlpha": [
+            "culebro/triple-threat-with-10-foundation E[α]=0.11",
+            "psyberkid/fithe-bladestone-a-unique-warrior E[α]=0.11",
+            "scfather/peakmonster-hurricane-operate-report-235--brawl-result-15-7-2026 E[α]=0.11",
+            "takeru255/gold-arrived-at-the-death E[α]=0.11",
+            "aburihan1/open-minor-chest-with-glint E[α]=0.11"
+          ],
+          "cartelTrailsFlagged": 1
+        }
+      },
+      "posting": {
+        "draftsPrepared": 1,
+        "locked": true
+      },
+      "gaming": {
+        "gamesDetected": 0,
+        "games": [],
+        "locked": true
+      },
+      "incentive": {
+        "offersFound": 1,
+        "nominated": 1,
+        "autoExecuted": 0,
+        "topOffers": [
+          "hivegc/comeback-and-contest-announcement-post EV=-0.100 [comment]"
+        ]
+      }
+    },
+    {
+      "account": "sigmund-vexler",
+      "voting": {
+        "currentMana": "5734900828",
+        "maxMana": "6066992140",
+        "votesPlanned": 1,
+        "votesBroadcast": 0,
+        "votesDryRun": 0,
+        "errors": 1,
+        "strategy": {
+          "archetype": "alpha-hunter",
+          "disposition": "Reads the whole trending field as a reward topology and funds the deepest underpriced sinks first.",
+          "feeds": [
+            "main"
+          ],
+          "fieldSize": 18,
+          "emphasisHits": 0,
+          "votingPowerBps": 9452,
+          "eligibleCount": 13,
+          "acted": true,
+          "decision": "alpha-hunter cast 1 vote at 95% power: @x-rain"
+        },
+        "radar": {
+          "posts": 18,
+          "mispricingEnergy": 28,
+          "components": 13,
+          "durable": true,
+          "topSinks": [
+            "ecency.waves/waves-20260717smpn7a",
+            "wiseagent/movie-review-the-odyssey-2026-mrp232vz",
+            "peak.snaps/snap-container-1784324880"
+          ]
+        },
+        "intelligence": {
+          "fiedler": 1,
+          "decayHalfLife": 0.6931471805599453,
+          "cartelCycles": 692,
+          "bridges": 8,
+          "topByExpectedAlpha": [
+            "wiseagent/movie-review-the-odyssey-2026-mrp232vz E[α]=1.82",
+            "ecency.waves/waves-20260717smpn7a E[α]=0.03",
+            "peak.snaps/snap-container-1784324880 E[α]=0.00",
+            "roelandp/hivefest-xi-goes-swarm-self-organized-one-weekend-bcn-lets-do-this E[α]=0.00",
+            "acidyo/the-new-posh E[α]=0.00"
+          ],
+          "cartelTrailsFlagged": 2
+        }
+      },
+      "posting": {
+        "draftsPrepared": 1,
+        "locked": true
+      },
+      "gaming": {
+        "gamesDetected": 0,
+        "games": [],
+        "locked": true
+      },
+      "incentive": {
+        "offersFound": 3,
+        "nominated": 2,
+        "autoExecuted": 0,
+        "topOffers": [
+          "roelandp/hivefest-xi-goes-swarm-self-organized-one-weekend-bcn-lets-do-this EV=-0.100 [comment]",
+          "x-rain/hiveposh-threads-contest-1 EV=-0.100 [comment]"
+        ]
+      }
+    },
+    {
+      "account": "marshian",
+      "voting": {
+        "currentMana": "5955148771",
+        "maxMana": "5955148771",
+        "votesPlanned": 0,
+        "votesBroadcast": 0,
+        "votesDryRun": 0,
+        "errors": 0,
+        "strategy": {
+          "archetype": "scout",
+          "disposition": "Ranges tags hunting cross-community bridge posts the reward graph hasn't found yet.",
+          "feeds": [
+            "#gaming",
+            "#art",
+            "#writing",
+            "#photography"
+          ],
+          "fieldSize": 40,
+          "emphasisHits": 0,
+          "votingPowerBps": 10000,
+          "eligibleCount": 35,
+          "acted": false,
+          "decision": "scout waited — a full vote at 100% power is still dust — Hive Power too low to matter"
+        },
+        "radar": {
+          "posts": 40,
+          "mispricingEnergy": 3,
+          "components": 29,
+          "durable": true,
+          "topSinks": [
+            "maricrochets/beautiful-small-crochet-doily-preciosa-carpetica-elaborada-a-crochet",
+            "hellsveiah/pages-from-my-sketchbook-only",
+            "deeanndmathews/zapfic50-friday-prompt-whisper"
+          ]
+        },
+        "intelligence": {
+          "fiedler": 1,
+          "decayHalfLife": 0.6931471805599453,
+          "cartelCycles": 2,
+          "bridges": 8,
+          "topByExpectedAlpha": [
+            "maricrochets/beautiful-small-crochet-doily-preciosa-carpetica-elaborada-a-crochet E[α]=1.48",
+            "hellsveiah/pages-from-my-sketchbook-only E[α]=0.61",
+            "deeanndmathews/zapfic50-friday-prompt-whisper E[α]=0.46",
+            "psycho-yoseph/hardcore-townsmen-37-southern-development E[α]=0.00",
+            "yousafharoonkhan/the-wait-is-over-holozing E[α]=0.00"
+          ],
+          "cartelTrailsFlagged": 0
+        }
+      },
+      "posting": {
+        "draftsPrepared": 1,
+        "locked": true
+      },
+      "gaming": {
+        "gamesDetected": 0,
+        "games": [],
+        "locked": true
+      },
+      "incentive": {
+        "offersFound": 1,
+        "nominated": 1,
+        "autoExecuted": 0,
+        "topOffers": [
+          "worldbuilder/worldbuilding-prompt-1134-weeds EV=-0.100 [comment]"
+        ]
+      }
+    },
+    {
+      "account": "michael561",
+      "voting": {
+        "currentMana": "37315965610",
+        "maxMana": "37315965610",
+        "votesPlanned": 0,
+        "votesBroadcast": 0,
+        "votesDryRun": 0,
+        "errors": 0,
+        "strategy": {
+          "archetype": "archivist",
+          "disposition": "Follows a few trusted authors and its own feed; conservative, durability- and quality-first.",
+          "feeds": [
+            "own-feed",
+            "blog:@emsenn0"
+          ],
+          "fieldSize": 12,
+          "emphasisHits": 3,
+          "votingPowerBps": 10000,
+          "eligibleCount": 0,
+          "acted": false,
+          "decision": "archivist waited — no eligible candidate in the field"
+        },
+        "radar": {
+          "posts": 12,
+          "mispricingEnergy": 0,
+          "components": 9,
+          "durable": true,
+          "topSinks": []
+        },
+        "intelligence": {
+          "fiedler": 0.9999999999999999,
+          "decayHalfLife": 0.6931471805599454,
+          "cartelCycles": 259,
+          "bridges": 8,
+          "topByExpectedAlpha": [
+            "curatingunicorn/free-giveaway-win-a-weed E[α]=0.00",
+            "ecotrain/ecotrain-question-of-the-week-57-tie-up-post-share-a-ritual-that-you-perform-or-know-about E[α]=0.00",
+            "sreypov/coconut-milk-baka-bana-chips-a-sweet-and-spicy-ital-snack E[α]=0.00",
+            "luvshares/luvbot-share-luv-with-the-reply-luv E[α]=0.00",
+            "leofinance/introducing-dec-farming-on-cub-finance-or-changes-to-dens-farms-24-hours-left-for-wrapping-cub E[α]=0.00"
+          ],
+          "cartelTrailsFlagged": 0
+        }
+      },
+      "posting": {
+        "draftsPrepared": 1,
+        "locked": true
+      },
+      "gaming": {
+        "gamesDetected": 0,
+        "games": [],
+        "locked": true
+      },
+      "incentive": {
+        "offersFound": 2,
+        "nominated": 2,
+        "autoExecuted": 0,
+        "topOffers": [
+          "luvshares/luvbot-share-luv-with-the-reply-luv EV=-0.101 [comment,vote]",
+          "curatingunicorn/free-giveaway-win-a-weed EV=-0.102 [comment,reblog]"
+        ]
+      }
+    },
+    {
+      "account": "help-fund",
+      "voting": {
+        "currentMana": "7382751497",
+        "maxMana": "8400061186",
+        "votesPlanned": 1,
+        "votesBroadcast": 1,
+        "votesDryRun": 0,
+        "errors": 0,
+        "strategy": {
+          "archetype": "patron-steward",
+          "disposition": "Supports the communities it funds — rewards quality and conversation inside them, not the global field.",
+          "feeds": [
+            "community:hive-167922",
+            "community:hive-163521",
+            "#leofinance",
+            "#hive",
+            "#dev"
+          ],
+          "fieldSize": 57,
+          "emphasisHits": 27,
+          "votingPowerBps": 8788,
+          "eligibleCount": 32,
+          "acted": true,
+          "decision": "patron-steward cast 1 vote at 88% power: @behiver"
+        },
+        "radar": {
+          "posts": 57,
+          "mispricingEnergy": 13.5,
+          "components": 22,
+          "durable": true,
+          "topSinks": [
+            "behiver/hivepulseapp-improving-goals-functionality-after-community-feedback",
+            "harmonelwithfarm/green-leaves-fresh-hope-watching",
+            "leofinance/inleos-vision-for-hive-open-sourcing-our-tech-and-growth-3xc",
+            "leofinance/dhf-report-1-transparency-apis-documentation-release-timeline-and-open-source-contributions-to-hive-5ed",
+            "leofinance/hivestats-redesign-the-best-way-to-track-analyze-your-hive-account-3fa"
+          ]
+        },
+        "intelligence": {
+          "fiedler": 0.9999999999999974,
+          "decayHalfLife": 0.6931471805599471,
+          "cartelCycles": 514,
+          "bridges": 8,
+          "topByExpectedAlpha": [
+            "behiver/hivepulseapp-improving-goals-functionality-after-community-feedback E[α]=1.31",
+            "harmonelwithfarm/green-leaves-fresh-hope-watching E[α]=0.33",
+            "walterprofe/-weekly-investment-simulation-week-23-25week-to-reach-financial-freedom-update-17-july-2026-8ro E[α]=0.22",
+            "yordan96/chapter-viii-why-trust-will-become-more-valuable-than-talent-dg3 E[α]=0.22",
+            "enlace/problema-matemtico-del-da-16072026-7bc E[α]=0.18"
+          ],
+          "cartelTrailsFlagged": 1
+        }
+      },
+      "posting": {
+        "draftsPrepared": 1,
+        "locked": true
+      },
+      "gaming": {
+        "gamesDetected": 0,
+        "games": [],
+        "locked": true
+      },
+      "incentive": {
+        "offersFound": 9,
+        "nominated": 5,
+        "autoExecuted": 0,
+        "topOffers": [
+          "centtoken/delegation-works-weekly-report-18726 EV=5.478 [delegate]",
+          "leofinance/hivestats-redesign-the-best-way-to-track-analyze-your-hive-account-3fa EV=-0.100 [comment]",
+          "yordan96/chapter-viii-why-trust-will-become-more-valuable-than-talent-dg3 EV=-0.100 [comment]",
+          "aljif7/a-daily-word-in-spanish-467-mrprczitb2cf3545 EV=-0.100 [comment]",
+          "sagarkothari88/ba9be272 EV=-0.100 [comment]"
+        ]
+      }
+    }
+  ]
+}

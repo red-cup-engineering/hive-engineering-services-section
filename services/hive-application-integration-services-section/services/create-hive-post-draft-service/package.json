@@ -1,0 +1,25 @@
+{
+  "name": "@red-cup-engineering/create-hive-post-draft-service",
+  "version": "0.1.0",
+  "description": "Creates an inert, review-required Hive post payload; it never signs or broadcasts.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.mjs"
+    }
+  },
+  "files": [
+    "src",
+    "package.json"
+  ],
+  "scripts": {
+    "check": "node --check src/index.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "@red-cup-engineering/computer-text-content-engineering-services-section": "workspace:*"
+  }
+}

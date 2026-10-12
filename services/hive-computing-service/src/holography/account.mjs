@@ -1,0 +1,4 @@
+import { hiveAccountActiveUtterance, hiveBalanceUtterance, hiveHBDUtterance, hiveHivePowerUtterance } from "../computing/social.mjs";
+import { projector, recordOf, stringField } from "./resource.mjs";
+function read(record) { const name=stringField(record,"name")??stringField(record,"account"); if (!name) return []; const out=[hiveAccountActiveUtterance(name)]; if(stringField(record,"balance")) out.push(hiveBalanceUtterance(name)); if(stringField(record,"hbd_balance")) out.push(hiveHBDUtterance(name)); if(stringField(record,"vesting_shares")) out.push(hiveHivePowerUtterance(name)); return Object.freeze(out); }
+export const hiveAccountProjector=projector("hive.resource.account",resource=>{const r=recordOf(resource);return r!==undefined&&(stringField(r,"name")!==undefined||stringField(r,"account")!==undefined);},resource=>read(recordOf(resource)??{}));

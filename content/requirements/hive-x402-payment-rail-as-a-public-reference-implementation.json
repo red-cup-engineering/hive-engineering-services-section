@@ -1,0 +1,37 @@
+{
+  "id": "hive-x402-payment-rail-as-a-public-reference-implementation",
+  "name": "hive-x402 payment rail as a public reference implementation",
+  "kind": "requirement",
+  "raised-by": "claude-fable-5",
+  "asks": "Adapt x402's challenge/verify/settle semantics to Hive: a 402 response carries a Hive payment requirement (transfer with memo nonce, or hive-engine token transfer), the client pays on-chain, the facilitator verifies the transaction against public RPC and issues the settlement proof, and every crossing is witnessed as RDF/PROV exactly as paid-ephemeris-gateway already does on Base. Nobody has built this on Hive; publishing it as a spec plus an Apache-2.0 reference implementation (sibling of x402-boundary-reference) makes the Union the reference facilitator for an entire chain, and every future Union Hive service inherits the rail for free.",
+  "from-idea": "emsenn/idea/hive-x402-payment-rail-as-a-public-reference-implementation",
+  "met-when": [
+    {
+      "cell": "hive-x402-payment-rail-as-a-public-reference-implementation:conditions-stated",
+      "target": "held"
+    }
+  ],
+  "x-provenance": {
+    "recorded-by": "561-group capture session (claude session 017x7ZhpkZQAx5VZSv2Hz5Q9)",
+    "recorded-on": "2026-10-10",
+    "sources": [
+      {
+        "words": "Adapt x402's challenge/verify/settle semantics to Hive: a 402 response carries a Hive payment requirement (transfer with memo nonce, or hive-engine token transfer), the client pays on-chain, the facilitator verifies the transaction against public RPC and issues the settlement proof, and every crossing is witnessed as RDF/PROV exactly as paid-ephemeris-gateway already does on Base. Nobody has built this on Hive; publishing it as a spec plus an Apache-2.0 reference implementation (sibling of x402-boundary-reference) makes the Union the reference facilitator for an entire chain, and every future Union Hive service inherits the rail for free.",
+        "at": "2026-07-24",
+        "locator": "lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/lib/legacy/restored-from-main/2026-09-13-ccf2d7a/services/561-group-enterprise-services-section/services/561-group-board-of-directors/lib/legacy/2026-08-03-executive-office/data/records/ideas/2026/07/24/2026-07-24-executive-office-ideas.jsonl#hive-x402-payment-rail-as-a-public-reference-implementation"
+      }
+    ],
+    "carried-from-idea-record": "lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/lib/legacy/restored-from-main/2026-09-13-ccf2d7a/services/561-group-enterprise-services-section/services/561-group-board-of-directors/lib/legacy/2026-08-03-executive-office/data/records/ideas/2026/07/24/2026-07-24-executive-office-ideas.jsonl",
+    "pending-conditions": "Carried from the 2026-07 executive office's idea record under ideas-dispose-through-the-requirement-term; no met-when that exercises this idea's capability has been stated yet. The owning section states it.",
+    "linked-carriers": [],
+    "coverage": "lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/services/emsenn-services-section/data/records/leader-utterances/coverage/executive-office-ideas-2026-07.md",
+    "idea-record-fields": {
+      "opens": "Can x402's exact-payment scheme be mapped onto Hive transfers and custom_json with only a new facilitator adapter, or does Hive's 3-second irreversibility model require a different challenge shape?",
+      "prompted-by": "emsenn/idea/set-up-an-x402-marketplace-on-hive-at-propolis-hive-561-group"
+    },
+    "sign-cell": {
+      "type": "emsenn/schema/requirement",
+      "mark": "ni:///sha-256;fJJvq8dF9h2fHA73XJ1JmmF_QqWY--POwzWOHfxnAYY"
+    }
+  }
+}

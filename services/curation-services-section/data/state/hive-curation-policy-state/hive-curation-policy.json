@@ -1,0 +1,64 @@
+{
+  "type": "HiveCurationPolicyRecord",
+  "version": 2,
+  "createdAt": "2026-09-05T06:15:00.000Z",
+  "createdBy": "executive-lot 2026-09-05, per founder order 'find all our hive code... realize all our best ideas... curate smartest on hive'",
+  "note": "Current defaults with a LOWERED default weight (maxWeight 3000 = 30%, down from the pipeline built-in 10000 = 100%). emsenn0 is the founder public identity: held (heldAccounts) until the founder fills preferredTags, excludedAuthors, and weight for that account -- no votes cast for emsenn0 while held. michael561 runs as-is. maxDailyBudgetPercent stays the standing 20% mana cap until the founder edits this file.",
+  "updatedAt": "2026-09-26T19:00:00.000Z",
+  "updatedBy": "curation-window-correction 2026-09-26: curationWindowSeconds/curationWindowToleranceSeconds were modeling the PRE-HF25 five-minute reverse-auction (votes cast in a post's first 5 minutes lost curation reward). Hardfork 25 ('Equilibrium', 2021-06-30) removed the reverse auction entirely: 'the 5 minute reverse auction is going away, so there is no punishment for voting early' (hive.blog/hive/@hiveio/hive-hardfork-25-is-on-the-way). Under the current linear curve, curation reward within a post's first 24 hours is based solely on the curator's HP and vote weight -- there is no timing bonus or penalty in that window; the reward curve only softens after 24 hours to the end of the 7-day payout window (hive.blog/hive-167922/@ackza/qraneo; search-corroborated 2026-09-26). Gating candidates to age 240-360s therefore serves no protocol purpose and was measured live on cold-red-gate to refuse ~99% of candidates as 'outside-window' (1592 of ~1600 refusals across the 2026-09-05..09-26 journal, vs 11 real votes cast for michael561 in the last hour of chain history read via condenser_api.get_account_history). Corrected: curationWindowSeconds 300->0, curationWindowToleranceSeconds 60->150 (accept a post from the moment it is read up to 150s old) -- vote as early as candidate posts are seen, per current rules, while keeping the same narrow age-band width the original policy relied on to keep each post's candidacy alive for roughly one cycle only (no vote-history de-duplication exists yet in schedule-set-of-votes/cast-set-of-votes; widening the tolerance far beyond one cycle's span would let the same top-of-feed post re-qualify and be re-cast on repeatedly, which Hive's vote_evaluator rejects as an identical-vote error and which would waste RC every cycle -- named as follow-on work, not fixed by this policy edit).",
+  "accounts": [
+    "emsenn0",
+    "michael561"
+  ],
+  "nodes": [
+    "https://api.hive.blog",
+    "https://api.openhive.network"
+  ],
+  "hiveEngineNode": "https://api.hive-engine.com/rpc/contracts",
+  "tags": [
+    {
+      "name": "LEO",
+      "tag": "leofinance",
+      "symbol": "LEO"
+    },
+    {
+      "name": "POB",
+      "tag": "proofofbrain",
+      "symbol": "POB"
+    },
+    {
+      "name": "CENT",
+      "tag": "cent",
+      "symbol": "CENT"
+    },
+    {
+      "name": "WAIV",
+      "tag": "waivio",
+      "symbol": "WAIV"
+    },
+    {
+      "name": "BASE",
+      "tag": "hive",
+      "symbol": null
+    }
+  ],
+  "postsPerTag": 20,
+  "dailyManaBudgetPercent": 20,
+  "minWeight": 100,
+  "maxWeight": 3000,
+  "dustPendingPayoutThresholdHbd": "0.02",
+  "dustWeight": 100,
+  "preferredTags": [
+    "proofofbrain",
+    "waivio"
+  ],
+  "neverVoteAuthors": [],
+  "curationWindowSeconds": 0,
+  "curationWindowToleranceSeconds": 150,
+  "maxDailyBudgetPercent": 20,
+  "postingKeyPathTemplate": "/home/emsenn/.config/blockchain/hive/{account}/posting.wif",
+  "journalRoot": "/home/emsenn/561-group/hive-curation-cycle-journal",
+  "heldAccounts": [
+    "emsenn0"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "@emsenn/waggle",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline Hive account history, exact balances, reconciliation, and local key storage.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emsenn/waggle.git"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "bin": {
+    "waggle": "./src/cli.mjs"
+  },
+  "scripts": {
+    "check": "node --check src/cli.mjs && node --check src/sync.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "main": "./src/index.mjs",
+  "files": [
+    "src",
+    "package.json"
+  ],
+  "exports": {
+    ".": "./src/index.mjs",
+    "./sync": "./src/sync.mjs",
+    "./cli": "./src/cli.mjs",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@emsenn/computing-with-hive": "workspace:*",
+    "@lenticule-science/metrologic": "0.3.0",
+    "@red-cup-engineering/hive-blockchain-client-service": "0.1.2",
+    "@red-cup-engineering/computer-system-engine": "0.1.0",
+    "@red-cup-engineering/key-management-services-section": "0.5.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.1"
+  },
+  "sideEffects": false
+}

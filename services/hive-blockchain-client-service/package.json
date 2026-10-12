@@ -1,0 +1,66 @@
+{
+  "name": "@red-cup-engineering/hive-blockchain-client-service",
+  "version": "0.1.2",
+  "license": "Unlicense",
+  "type": "module",
+  "description": "Plain Node Hive client: chain reads with endpoint failover, Hive operation serialization, and role-specific transaction signing and submission using shared cryptographic, byte-encoding, and HTTP capabilities.",
+  "bin": {
+    "hive-client": "./scripts/hive-client.mjs"
+  },
+  "files": [
+    "src",
+    "scripts",
+    "README.md",
+    "package.json",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=24.2.0"
+  },
+  "keywords": [
+    "hive",
+    "blockchain",
+    "graphene",
+    "secp256k1",
+    "json-rpc",
+    "zero-dependency",
+    "cli"
+  ],
+  "scripts": {
+    "test": "node test/_run_tests.mjs",
+    "check": "node --check src/client.mjs"
+  },
+  "exports": {
+    ".": "./src/client.mjs",
+    "./package.json": "./package.json",
+    "./*": "./*",
+    "./keys.mjs": "./src/keys.mjs",
+    "./ops.mjs": "./src/ops.mjs",
+    "./chain.mjs": "./src/chain.mjs",
+    "./rpc.mjs": "./src/rpc.mjs",
+    "./serialize.mjs": "./src/serialize.mjs",
+    "./transaction.mjs": "./src/transaction.mjs",
+    "./engine.mjs": "./src/engine.mjs",
+    "./asset.mjs": "./src/asset.mjs",
+    "./rewards.mjs": "./src/rewards.mjs",
+    "./market.mjs": "./src/market.mjs"
+  },
+  "imports": {
+    "#harness": "./test/_harness.mjs",
+    "#lib/*": "./src/*",
+    "#*": "./*"
+  },
+  "private": false,
+  "dependencies": {
+    "@red-cup-engineering/metrologic": "workspace:*",
+    "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/computer-serialized-content-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/computer-text-content-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/gaming": "workspace:*",
+    "@red-cup-engineering/http-services-section": "workspace:*",
+    "@red-cup-engineering/exact-number-data-service": "workspace:*",
+    "@red-cup-engineering/json-rpc-transport-service": "workspace:*",
+    "@red-cup-engineering/exact-order-book-service": "workspace:*"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@red-cup-engineering/hive-chain-observation-service",
+  "version": "0.1.0",
+  "description": "Direct, retry-bounded observations of Hive and Hive-Engine public JSON-RPC state.",
+  "type": "module",
+  "exports": "./src/index.mjs",
+  "scripts": {
+    "check": "node --check src/index.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "files": [
+    "src",
+    "package.json"
+  ],
+  "engines": {
+    "node": ">=24"
+  }
+}
