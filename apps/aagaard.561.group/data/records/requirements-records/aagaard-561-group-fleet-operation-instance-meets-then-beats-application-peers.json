@@ -1,0 +1,55 @@
+{
+  "id": "aagaard-561-group-fleet-operation-instance-meets-then-beats-application-peers",
+  "name": "aagaard-561-group meets then beats its relevant peers",
+  "kind": "requirement",
+  "raised-by": "emsenn",
+  "asks": "we wanna list meet-then-beats for more of our apps/ basically every app",
+  "comparison": {
+    "required-of": "561-group",
+    "subject": {
+      "kind": "system",
+      "name": "Aagaard 561 Group fleet-operation instance"
+    },
+    "relation": "meet-then-beat",
+    "against": [
+      {
+        "name": "Temporal",
+        "domain": "An accountable fleet-operation instance with durable execution and useful observability; assess instance configuration separately from shared engines."
+      },
+      {
+        "name": "Grafana",
+        "domain": "An accountable fleet-operation instance with durable execution and useful observability; assess instance configuration separately from shared engines."
+      }
+    ]
+  },
+  "met-when": [
+    {
+      "cell": "aagaard-561-group-fleet-operation-instance-meets-then-beats-application-peers:meet",
+      "target": "held",
+      "says": "aagaard-561-group demonstrates parity with every named target on its relevant workflows, with identified baseline versions, explicit capability coverage, comparable workloads and independent receiving evidence. Any excluded capability requires a justified product-boundary decision."
+    },
+    {
+      "cell": "aagaard-561-group-fleet-operation-instance-meets-then-beats-application-peers:beat",
+      "target": "held",
+      "says": "After parity with each target is established, aagaard-561-group demonstrates a material user-relevant improvement under comparable conditions while retaining the capabilities that established parity."
+    }
+  ],
+  "x-provenance": {
+    "recorded-by": "codex",
+    "recorded-on": "2026-10-15",
+    "leader-source": "lib/emsenn/services/561-group/services/561-group-services-section/data/records/leader-source-records/2026-10-15-application-meet-then-beat-expansion.json",
+    "target-selection-authority": "You should use your own best thinking and ambitions to say what each should meet-then-beat",
+    "leader-named-targets": [],
+    "agent-selected-targets": [
+      "Temporal",
+      "Grafana"
+    ],
+    "intended-capability": "An accountable fleet-operation instance with durable execution and useful observability; assess instance configuration separately from shared engines.",
+    "classification": "fleet instance configuration and durable operational data; reusable engines remain engineering-owned",
+    "qualification-gaps": [
+      "Exact baseline versions, capability coverage, workloads, measures and receiving operations remain to be qualified.",
+      "No comparative receiving evidence or signed live-enterprise admission is asserted."
+    ],
+    "admission": "Authored requirement data raised under the Leader direction, with Codex-selected targets; satisfaction remains unsettled."
+  }
+}
