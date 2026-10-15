@@ -4,7 +4,7 @@ import { scheduleSetOfVotes } from "@red-cup-engineering/schedule-set-of-votes-s
 import { castSetOfVotes } from "@red-cup-engineering/cast-set-of-votes-service";
 import { put } from "@red-cup-engineering/semiotic-eavt-services-section/store";
 import { curationPolicy } from "@red-cup-engineering/hive-fleet-operations-service/strategy";
-import { runJavascriptNodeOperation } from "@red-cup-engineering/javascript-node-services-section/operation";
+import { runJavascriptNodeOperation } from "@red-cup-engineering/javascript-node-operation-engineering-services-section/operation";
 
 const DEFAULT_NODES = Object.freeze(["https://api.hive.blog", "https://api.openhive.network"]);
 

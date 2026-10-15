@@ -18,8 +18,8 @@
     "@red-cup-engineering/hive-computing-service": "workspace:*",
     "@red-cup-engineering/metrologic": "workspace:*",
     "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/javascript-node-services-section": "workspace:*",
-    "@red-cup-engineering/exact-number-data-service": "workspace:*"
+    "@red-cup-engineering/exact-number-data-service": "workspace:*",
+    "@red-cup-engineering/javascript-node-operation-engineering-services-section": "workspace:*"
   },
   "scripts": {
     "check": "node --check scripts/schedule-set-of-votes.mjs",

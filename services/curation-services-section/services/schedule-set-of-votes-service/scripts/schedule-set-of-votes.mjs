@@ -3,7 +3,7 @@ import { rationalOfBigInts, rationalParts } from "@red-cup-engineering/computer-
 import { formatUnits, rationalUnits } from "@red-cup-engineering/computer-data-engineering-services-section/number/decimal-string";
 import { gradedValue, parseDecimalAmount } from "@red-cup-engineering/computer-data-engineering-services-section/number/graded";
 import { selectCurationVotes, toPostObservation } from "@red-cup-engineering/hive-computing-service/computing/curation";
-import { runJavascriptNodeOperation } from "@red-cup-engineering/javascript-node-services-section/operation";
+import { runJavascriptNodeOperation } from "@red-cup-engineering/javascript-node-operation-engineering-services-section/operation";
 
 const DEFAULT_POLICY = Object.freeze({
   dailyManaBudgetPercent: 20,
