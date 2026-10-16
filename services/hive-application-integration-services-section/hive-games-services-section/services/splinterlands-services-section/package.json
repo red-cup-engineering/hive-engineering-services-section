@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/splinterlands-services-section",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "type": "module",
   "description": "Read-only Splinterlands collection observation, a bounded card-market purchase planner, and a battle-readiness audit signal. Deliberately has no battle-queue or team-submission encoder: see README for the ToS boundary this preserves.",
   "engines": {
@@ -28,5 +28,12 @@
     "hive",
     "splinterlands",
     "sovereign-state-enterprise"
+  ],
+  "private": false,
+  "files": [
+    "package.json",
+    "README*",
+    "LICENSE*",
+    "src"
   ]
 }
