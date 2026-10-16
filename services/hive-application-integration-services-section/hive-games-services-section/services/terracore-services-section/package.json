@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/terracore-services-section",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "TerraCore player-state observation with exact SCRAP/mine-rate lexeme preservation, scrap-claim and Engineering-upgrade planning, and conservative PvE battle-target selection. Produces unsigned custom_json intents only.",
   "engines": {
@@ -25,7 +25,14 @@
     "sovereign-state-enterprise"
   ],
   "dependencies": {
-    "@red-cup-engineering/metrologic": "workspace:*",
-    "@red-cup-engineering/exact-number-data-service": "workspace:*"
-  }
+    "@red-cup-engineering/metrologic": "0.4.0",
+    "@red-cup-engineering/exact-number-data-service": "0.1.1"
+  },
+  "private": false,
+  "files": [
+    "package.json",
+    "README*",
+    "LICENSE*",
+    "src"
+  ]
 }

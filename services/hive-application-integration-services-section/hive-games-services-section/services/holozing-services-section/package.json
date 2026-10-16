@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/holozing-services-section",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "type": "module",
   "description": "Read-only HoloZing pending-reward observation and pure stake-only reward-claim planning; never opens, transfers, or mutates an Alpha Vial NFT.",
   "engines": {
@@ -23,5 +23,12 @@
     "hive-engine",
     "holozing",
     "sovereign-state-enterprise"
+  ],
+  "private": false,
+  "files": [
+    "package.json",
+    "README*",
+    "LICENSE*",
+    "src"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/dcrops-services-section",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "type": "module",
   "description": "dCrops NFT-instance observation (land, seed, season) and pure single-plot action planning (plant / harvest / remove-expired / wait), producing unsigned custom_json intents only.",
   "engines": {
@@ -25,6 +25,13 @@
     "sovereign-state-enterprise"
   ],
   "dependencies": {
-    "@red-cup-engineering/hive-blockchain-client-service": "workspace:*"
-  }
+    "@red-cup-engineering/hive-blockchain-client-service": "0.1.5"
+  },
+  "private": false,
+  "files": [
+    "package.json",
+    "README*",
+    "LICENSE*",
+    "src"
+  ]
 }

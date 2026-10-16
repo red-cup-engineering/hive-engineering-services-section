@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/hive-blockchain-client-service",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "license": "Unlicense",
   "type": "module",
   "description": "Plain Node Hive client: chain reads with endpoint failover, Hive operation serialization, and role-specific transaction signing and submission using shared cryptographic, byte-encoding, and HTTP capabilities.",
@@ -52,15 +52,15 @@
   },
   "private": false,
   "dependencies": {
-    "@red-cup-engineering/metrologic": "workspace:*",
-    "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/computer-serialized-content-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/computer-text-content-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/gaming": "workspace:*",
-    "@red-cup-engineering/http-services-section": "workspace:*",
-    "@red-cup-engineering/exact-number-data-service": "workspace:*",
-    "@red-cup-engineering/json-rpc-transport-service": "workspace:*",
-    "@red-cup-engineering/exact-order-book-service": "workspace:*"
+    "@red-cup-engineering/metrologic": "0.4.0",
+    "@red-cup-engineering/computer-data-engineering-services-section": "0.2.0",
+    "@red-cup-engineering/computer-serialized-content-engineering-services-section": "0.1.0",
+    "@red-cup-engineering/computer-text-content-engineering-services-section": "0.1.0",
+    "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "0.3.1",
+    "@red-cup-engineering/exact-number-data-service": "0.1.1",
+    "@red-cup-engineering/http-services-section": "0.6.2",
+    "@red-cup-engineering/json-rpc-transport-service": "0.1.1",
+    "@red-cup-engineering/exact-order-book-service": "0.1.1",
+    "@red-cup-engineering/gaming": "0.1.10"
   }
 }

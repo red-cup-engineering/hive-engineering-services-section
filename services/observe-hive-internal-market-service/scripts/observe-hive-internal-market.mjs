@@ -11,7 +11,7 @@ import {
   divideDecimalStrings,
   compareDecimalStrings,
 } from "@red-cup-engineering/computer-data-engineering-services-section/number/decimal-string";
-import { runJavascriptNodeOperation } from "../../../../../../../../computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/src/operation.mjs";
+import { runJavascriptNodeOperation } from "@red-cup-engineering/javascript-node-operation-engineering-services-section/operation";
 
 const DEFAULT_NODES = Object.freeze(["https://api.hive.blog", "https://api.openhive.network"]);
 const DEFAULT_ACCOUNTS = Object.freeze([]);
