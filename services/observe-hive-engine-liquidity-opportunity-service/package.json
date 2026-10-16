@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/observe-hive-engine-liquidity-opportunity-service",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Keyless, block-bounded observation of Hive-Engine constant-product liquidity opportunities.",
   "type": "module",
   "exports": {
@@ -24,7 +24,8 @@
     "node": ">=24"
   },
   "dependencies": {
-    "@red-cup-engineering/hive-blockchain-client-service": "workspace:*",
-    "@red-cup-engineering/normalize-earning-opportunity-service": "workspace:*"
-  }
+    "@red-cup-engineering/normalize-earning-opportunity-service": "0.1.1",
+    "@red-cup-engineering/hive-blockchain-client-service": "0.1.5"
+  },
+  "private": false
 }

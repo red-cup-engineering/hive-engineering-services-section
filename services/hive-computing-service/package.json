@@ -1,7 +1,7 @@
 {
   "name": "@red-cup-engineering/hive-computing-service",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
   "type": "module",
   "description": "Hive — the Hive blockchain admitted as a computing package: root evidence-backed Hive admissions, topology carriers for chain facts, holography projectors for boundary resources, curation/market/analysis/logic/geometry derived reads, and run scripts over the Hive client.",
   "engines": {
@@ -22,19 +22,19 @@
     "./computing/analysis/alpha": "./src/computing/analysis/alpha.mjs"
   },
   "dependencies": {
-    "@red-cup-engineering/metrologic": "workspace:*",
-    "@red-cup-engineering/computer-code-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/computer-networking-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/hive-blockchain-client-service": "workspace:*",
-    "@red-cup-engineering/organizing": "workspace:*",
-    "@red-cup-engineering/relating": "workspace:*",
-    "@red-cup-engineering/signgraph": "workspace:*",
-    "@red-cup-engineering/signchain": "workspace:*",
-    "@red-cup-engineering/signcell": "workspace:*",
-    "@red-cup-engineering/signcraft": "workspace:*",
-    "@red-cup-engineering/exact-number-data-service": "workspace:*"
+    "@red-cup-engineering/metrologic": "0.4.0",
+    "@red-cup-engineering/computer-data-engineering-services-section": "0.2.0",
+    "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "0.3.1",
+    "@red-cup-engineering/signgraph": "0.1.0",
+    "@red-cup-engineering/signchain": "0.1.0",
+    "@red-cup-engineering/signcell": "0.2.0",
+    "@red-cup-engineering/exact-number-data-service": "0.1.1",
+    "@red-cup-engineering/computer-code-engineering-services-section": "0.1.2",
+    "@red-cup-engineering/signcraft": "0.1.1",
+    "@red-cup-engineering/computer-networking-engineering-services-section": "0.1.2",
+    "@red-cup-engineering/hive-blockchain-client-service": "0.1.5",
+    "@red-cup-engineering/organizing": "0.2.3",
+    "@red-cup-engineering/relating": "0.10.4"
   },
   "sideEffects": false
 }
