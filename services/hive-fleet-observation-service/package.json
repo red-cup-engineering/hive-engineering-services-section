@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/hive-fleet-observation-service",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Pure, exact Hive fleet observation projection without provider, credentials or resident operation.",
   "exports": {
@@ -12,11 +12,12 @@
     "package.json"
   ],
   "dependencies": {
-    "@red-cup-engineering/exact-number-data-service": "workspace:*"
+    "@red-cup-engineering/exact-number-data-service": "0.1.1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/red-cup-engineering/computer-services-section.git",
     "directory": "services/blockchain-services-section/services/hive-engineering-services-section/services/hive-fleet-observation-service"
-  }
+  },
+  "private": false
 }
