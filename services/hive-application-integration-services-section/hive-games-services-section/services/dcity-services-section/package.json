@@ -3,6 +3,11 @@
   "version": "0.1.2",
   "type": "module",
   "description": "Read-only dCity recovery pricing: exact-arithmetic quoting of the closed dCity token's live SIM/SWAP.HIVE Hive-Engine pool exit, leaving CITY NFT custody untouched.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/computer-systems-engineering-services-section.git",
+    "directory": "services/computer-blockchain-system-services-section/services/hive-engineering-services-section/services/hive-application-integration-services-section/hive-games-services-section/services/dcity-services-section"
+  },
   "engines": {
     "node": ">=22.18"
   },

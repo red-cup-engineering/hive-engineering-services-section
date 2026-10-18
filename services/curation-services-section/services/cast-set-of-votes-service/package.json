@@ -2,6 +2,11 @@
   "name": "@red-cup-engineering/cast-set-of-votes-service",
   "version": "0.1.2",
   "description": "Submits bounded Hive curation votes through the fleet signer and retains a vote as executed only after two public nodes confirm its exact chain operation.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/computer-systems-engineering-services-section.git",
+    "directory": "services/computer-blockchain-system-services-section/services/hive-engineering-services-section/services/curation-services-section/services/cast-set-of-votes-service"
+  },
   "type": "module",
   "private": false,
   "license": "UNLICENSED",

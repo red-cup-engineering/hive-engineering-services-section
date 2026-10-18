@@ -3,6 +3,11 @@
   "version": "0.1.2",
   "type": "module",
   "description": "dCrops NFT-instance observation (land, seed, season) and pure single-plot action planning (plant / harvest / remove-expired / wait), producing unsigned custom_json intents only.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/computer-systems-engineering-services-section.git",
+    "directory": "services/computer-blockchain-system-services-section/services/hive-engineering-services-section/services/hive-application-integration-services-section/hive-games-services-section/services/dcrops-services-section"
+  },
   "engines": {
     "node": ">=22.18"
   },

@@ -3,6 +3,11 @@
   "version": "0.1.1",
   "type": "module",
   "description": "TerraCore player-state observation with exact SCRAP/mine-rate lexeme preservation, scrap-claim and Engineering-upgrade planning, and conservative PvE battle-target selection. Produces unsigned custom_json intents only.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/computer-systems-engineering-services-section.git",
+    "directory": "services/computer-blockchain-system-services-section/services/hive-engineering-services-section/services/hive-application-integration-services-section/hive-games-services-section/services/terracore-services-section"
+  },
   "engines": {
     "node": ">=22.18"
   },

@@ -2,6 +2,11 @@
   "name": "@red-cup-engineering/observe-hive-engine-liquidity-opportunity-service",
   "version": "0.1.2",
   "description": "Keyless, block-bounded observation of Hive-Engine constant-product liquidity opportunities.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/computer-systems-engineering-services-section.git",
+    "directory": "services/computer-blockchain-system-services-section/services/hive-engineering-services-section/services/observe-hive-engine-liquidity-opportunity-service"
+  },
   "type": "module",
   "exports": {
     ".": {

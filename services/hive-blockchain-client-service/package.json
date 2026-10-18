@@ -4,6 +4,11 @@
   "license": "Unlicense",
   "type": "module",
   "description": "Plain Node Hive client: chain reads with endpoint failover, Hive operation serialization, and role-specific transaction signing and submission using shared cryptographic, byte-encoding, and HTTP capabilities.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/computer-systems-engineering-services-section.git",
+    "directory": "services/computer-blockchain-system-services-section/services/hive-engineering-services-section/services/hive-blockchain-client-service"
+  },
   "bin": {
     "hive-client": "./scripts/hive-client.mjs"
   },

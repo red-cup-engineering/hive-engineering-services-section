@@ -2,6 +2,11 @@
   "name": "@red-cup-engineering/run-hive-curation-cycle-service",
   "version": "0.1.3",
   "description": "Runs bounded Hive curation cycles from two-node witnessed decision inputs, proving each submitted vote on chain before treating it as executed.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/computer-systems-engineering-services-section.git",
+    "directory": "services/computer-blockchain-system-services-section/services/hive-engineering-services-section/services/curation-services-section/services/run-hive-curation-cycle-service"
+  },
   "type": "module",
   "private": false,
   "license": "UNLICENSED",

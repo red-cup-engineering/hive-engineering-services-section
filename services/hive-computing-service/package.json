@@ -4,6 +4,11 @@
   "private": false,
   "type": "module",
   "description": "Hive \u2014 the Hive blockchain admitted as a computing package: root evidence-backed Hive admissions, topology carriers for chain facts, holography projectors for boundary resources, curation/market/analysis/logic/geometry derived reads, and run scripts over the Hive client.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/computer-systems-engineering-services-section.git",
+    "directory": "services/computer-blockchain-system-services-section/services/hive-engineering-services-section/services/hive-computing-service"
+  },
   "engines": {
     "node": ">=22.18"
   },

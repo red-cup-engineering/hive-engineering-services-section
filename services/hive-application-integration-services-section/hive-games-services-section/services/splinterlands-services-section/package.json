@@ -3,6 +3,11 @@
   "version": "0.1.2",
   "type": "module",
   "description": "Read-only Splinterlands collection observation, a bounded card-market purchase planner, and a battle-readiness audit signal. Deliberately has no battle-queue or team-submission encoder: see README for the ToS boundary this preserves.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/computer-systems-engineering-services-section.git",
+    "directory": "services/computer-blockchain-system-services-section/services/hive-engineering-services-section/services/hive-application-integration-services-section/hive-games-services-section/services/splinterlands-services-section"
+  },
   "engines": {
     "node": ">=22.18"
   },

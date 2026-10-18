@@ -3,6 +3,11 @@
   "version": "0.1.2",
   "type": "module",
   "description": "Read-only HoloZing pending-reward observation and pure stake-only reward-claim planning; never opens, transfers, or mutates an Alpha Vial NFT.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/computer-systems-engineering-services-section.git",
+    "directory": "services/computer-blockchain-system-services-section/services/hive-engineering-services-section/services/hive-application-integration-services-section/hive-games-services-section/services/holozing-services-section"
+  },
   "engines": {
     "node": ">=22.18"
   },
