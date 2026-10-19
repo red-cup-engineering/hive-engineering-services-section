@@ -86,3 +86,7 @@
 	path = services/hive-computing-service
 	url = https://github.com/red-cup-engineering/hive-computing-service.git
 	branch = main
+[submodule "hive-account-ledger-data-services-section"]
+	path = data/records/hive-account-ledger-records
+	url = https://github.com/red-cup-engineering/hive-account-ledger-data-services-section.git
+	branch = main
