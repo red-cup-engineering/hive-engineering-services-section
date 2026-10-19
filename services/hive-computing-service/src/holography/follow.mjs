@@ -1,3 +1,0 @@
-import { hiveFollowUtterance, hiveUnfollowUtterance } from "../computing/social.mjs";
-import { projector, recordOf, stringField } from "./resource.mjs";
-export const hiveFollowProjector=projector("hive.resource.follow",resource=>{const r=recordOf(resource);return r!==undefined&&stringField(r,"follower")!==undefined&&(stringField(r,"following")!==undefined||stringField(r,"account")!==undefined);},resource=>{const r=recordOf(resource)??{};const follower=stringField(r,"follower"),following=stringField(r,"following")??stringField(r,"account");return !follower||!following?[]:Object.freeze([Array.isArray(r.what)&&r.what.length===0?hiveUnfollowUtterance(follower,following):hiveFollowUtterance(follower,following)]);});
