@@ -4,31 +4,31 @@
 	branch = main
 [submodule "workerbee-services-section"]
 	path = services/hive-application-integration-services-section/hive-games-services-section/services/workerbee-services-section
-	url = https://github.com/red-cup-engineering/workerbee-services-section.git
+	url = https://github.com/red-cup-engineering/workerbee-engineering-services-section.git
 	branch = main
 [submodule "terracore-services-section"]
 	path = services/hive-application-integration-services-section/hive-games-services-section/services/terracore-services-section
-	url = https://github.com/red-cup-engineering/terracore-services-section.git
+	url = https://github.com/red-cup-engineering/terracore-engineering-services-section.git
 	branch = main
 [submodule "splinterlands-services-section"]
 	path = services/hive-application-integration-services-section/hive-games-services-section/services/splinterlands-services-section
-	url = https://github.com/red-cup-engineering/splinterlands-services-section.git
+	url = https://github.com/red-cup-engineering/splinterlands-engineering-services-section.git
 	branch = main
 [submodule "holozing-services-section"]
 	path = services/hive-application-integration-services-section/hive-games-services-section/services/holozing-services-section
-	url = https://github.com/red-cup-engineering/holozing-services-section.git
+	url = https://github.com/red-cup-engineering/holozing-engineering-services-section.git
 	branch = main
 [submodule "hashkings-services-section"]
 	path = services/hive-application-integration-services-section/hive-games-services-section/services/hashkings-services-section
-	url = https://github.com/red-cup-engineering/hashkings-services-section.git
+	url = https://github.com/red-cup-engineering/hashkings-engineering-services-section.git
 	branch = main
 [submodule "dcrops-services-section"]
 	path = services/hive-application-integration-services-section/hive-games-services-section/services/dcrops-services-section
-	url = https://github.com/red-cup-engineering/dcrops-services-section.git
+	url = https://github.com/red-cup-engineering/dcrops-engineering-services-section.git
 	branch = main
 [submodule "dcity-services-section"]
 	path = services/hive-application-integration-services-section/hive-games-services-section/services/dcity-services-section
-	url = https://github.com/red-cup-engineering/dcity-services-section.git
+	url = https://github.com/red-cup-engineering/dcity-engineering-services-section.git
 	branch = main
 [submodule "create-hive-post-draft-service"]
 	path = services/hive-application-integration-services-section/services/create-hive-post-draft-service
@@ -52,11 +52,11 @@
 	branch = main
 [submodule "internal-market-services-section"]
 	path = services/internal-market-services-section
-	url = https://github.com/red-cup-engineering/internal-market-services-section.git
+	url = https://github.com/red-cup-engineering/internal-market-engineering-services-section.git
 	branch = main
 [submodule "hive-ledger-services-section"]
 	path = services/hive-ledger-services-section
-	url = https://github.com/red-cup-engineering/hive-ledger-services-section.git
+	url = https://github.com/red-cup-engineering/hive-ledger-engineering-services-section.git
 	branch = main
 [submodule "hive-keychain-login-service"]
 	path = services/hive-keychain-login-service
@@ -76,7 +76,7 @@
 	branch = main
 [submodule "curation-services-section"]
 	path = services/curation-services-section
-	url = https://github.com/red-cup-engineering/curation-services-section.git
+	url = https://github.com/red-cup-engineering/curation-engineering-services-section.git
 	branch = main
 [submodule "aagaard-561-group"]
 	path = apps/aagaard.561.group
@@ -88,5 +88,5 @@
 	branch = main
 [submodule "hive-account-ledger-data-services-section"]
 	path = data/records/hive-account-ledger-records
-	url = https://github.com/red-cup-engineering/hive-account-ledger-data-services-section.git
+	url = https://github.com/red-cup-engineering/hive-account-ledger-data-engineering-services-section.git
 	branch = main
