@@ -2,7 +2,15 @@
 aliases:
   - HiveMeta
   - Hivemeta
+status: historical-proposal
 ---
-HiveMeta is a decentralized application on the Hive blockchain designed for community-driven curation of account metadata. Using proof-of-stake, users can delegate Hive Power (HP) to the HiveMeta Curation Bot (MCB) to propose and vote on metadata tags for Hive accounts, such as “tip bot,” “curation account,” or “vaporware.” Voting power grows progressively with the duration of HP delegation, ensuring that only sustained participants have significant influence, while undelegation triggers a gradual decay of voting rights to discourage opportunistic behavior.
 
-Metadata changes are time-locked for review, remaining provisional for 30 days to prevent manipulation and allow for disputes. Proposal fees, paid in HBD, discourage spam and fund rewards for long-term delegators and accurate voters. All metadata, proposals, and votes are transparently stored on-chain, enabling easy integration with other Hive dApps. HiveMeta fosters trust and accountability within the Hive ecosystem, empowering the community to collaboratively enhance transparency and improve the user experience.
+# HiveMeta — proposed account-metadata curation on Hive
+
+HiveMeta was described as a *proposed* Hive application for community review of account metadata. Contributors would propose tags such as “tip bot,” “curation account,” or “vaporware,” using delegated Hive Power to participate in voting. The design gave longer-lived delegations progressively more influence and reduced that influence after undelegation to discourage short-term manipulation.
+
+The proposal also specified a **30-day review window** before metadata became final and HBD proposal fees intended to discourage spam and fund participant rewards. It called for recording proposals, votes, and resulting tags on-chain so other Hive applications could inspect their provenance.
+
+These are historical design choices, **not verified operating features**. This note does not establish that a contract, curation bot, voting rule, fee schedule, moderation appeal process, or current on-chain metadata service was installed or audited. The earlier wording is retained in this file’s Git history; implementation, authenticity of account labels, and governance authority require separate source-qualified receiving.
+
+HiveMeta is distinct from the [Hive Auto Ledger wallet/market and HAL-token proposal](hive-auto-ledger-product-note.md), and neither should be described as a currently live Group product solely because its concept note survived.
