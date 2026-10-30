@@ -11,3 +11,7 @@ The Hive Services Section maintains knowledge and practices for this service dom
 
 Its material is organized by artifact role under `content/`; specialized
 subdomains continue under `services/`.
+
+## Earlier work
+
+- Restored files at `lib/legacy/2026-06-14-291cf22` (restore commit 291cf22); `lib/legacy/2026-06-16-4a3582a` (restore commit 4a3582a); `lib/legacy/2026-06-17-0b8d657` (restore commit 0b8d657), from the 561-group/bare-cedar-fog history.
