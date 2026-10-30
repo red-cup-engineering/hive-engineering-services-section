@@ -12,7 +12,9 @@ external_links: []
 ---
 
 
-_Last updated from triage notes on 2025-08-26._
+_Last updated from triage notes on 2025-08-26. Consolidated for source custody on 2026-10-30._
+
+> **Historical proposal, not an active product claim.** This document preserves an early Hive Auto Ledger roadmap, HAL governance-token design, HLDSHBD liquidity-derivative proposal, and unverified investment-bot sketches. It does not establish deployed contracts, a minted token, reliable staking or buyback yields, an audited bot, current market conditions, or authority to trade. Original code and earlier wording remain in [the recovered 2025 source](https://github.com/red-cup-engineering/hive-engineering-services-section/blob/c98e9bf4637977c5aef0bd6b9d86b5b0c839ba77/lib/legacy/emsenn-2025-12-15-hive-auto-ledger/index.md); that archive is custody evidence, not another maintained product specification.
 
 ## Overview
 
@@ -118,7 +120,9 @@ HAL is designed to support a robust token-based economy, with its own set of tok
 
 #### HAL
 
-HAL is the governance and utility token at the core of the Hive Auto Ledger (HAL) platform, designed to integrate all aspects of its economy into a single, cohesive system. HAL facilitates decentralized decision-making, with governance weighted by staked tokens. Users propose changes, allocate resources, and guide development by staking and spending HAL, creating a self-sustaining cycle of demand.
+The following tokenomics are **proposed mechanisms** rather than statements about a circulating asset. Token issuance, governance rules, custody, economics, smart-contract security and actual subscription operations need their own source and live receiving evidence.
+
+HAL was proposed as a governance and utility token for Hive Auto Ledger, intended to connect a prospective platform economy. HAL facilitates decentralized decision-making, with governance weighted by staked tokens. Users propose changes, allocate resources, and guide development by staking and spending HAL, creating a self-sustaining cycle of demand.
 
 Revenue from the platform—whether from pay-to-use features like market analytics, trading fees, or contributions like Hive Power delegation—is collected in various tokens and converted into HAL through market buybacks. This ensures HAL remains the sole internal currency, directly tying its value to the platform’s success. Early liquidity providers register their contributions manually, earning proportional rewards in HAL, with plans to evolve into tokenized liquidity pool models as the system scales.
 
@@ -130,7 +134,7 @@ As the platform grows, HAL’s utility extends to funding proposals, incentivizi
 
 ##### HLDSHBD
 
-HLDSHBD is a liquid token derived from pooled staked HBD. The token is managed by a smart contract that stakes all deposited HBD, earning rewards that are automatically compounded back into the pool. HLDSHBD represents a proportional claim on the pool, including both the staked principal and accrued rewards. The token can be traded or integrated into DeFi protocols, offering holders liquidity and yield simultaneously. Redemption is facilitated by sending HLDSHBD to the contract, which unstakes and returns the corresponding share of the pool’s value to the sender.
+HLDSHBD was proposed as a liquid token representing pooled staked HBD. The historical design assumes a smart contract that manages deposits, staking and pooled rewards; no installed or audited contract is established by this note. HLDSHBD represents a proportional claim on the pool, including both the staked principal and accrued rewards. The token can be traded or integrated into DeFi protocols, offering holders liquidity and yield simultaneously. Redemption is facilitated by sending HLDSHBD to the contract, which unstakes and returns the corresponding share of the pool’s value to the sender.
 
 ##### HLDSHP
 
@@ -182,15 +186,10 @@ For a token name of `HLPHLPHLDSHALHLDSHPHLPHLDSHALHLDSHBD`, where:
 - `SHP` for Staked Hive Power,
 - `SHBD` for Staked Hive Backed Dollar.
 
-## HAL Token Overview
-
-HAL is the governance and utility token at the core of the Hive Auto Ledger (HAL) platform, designed to integrate all aspects of its economy into a single, cohesive system. HAL facilitates decentralized decision-making, with governance weighted by staked tokens. Users propose changes, allocate resources, and guide development by staking and spending HAL, creating a self-sustaining cycle of demand.
-
-Revenue from the platform—whether from pay-to-use features like market analytics, trading fees, or contributions like Hive Power delegation—is collected in various tokens and converted into HAL through market buybacks. This ensures HAL remains the sole internal currency, directly tying its value to the platform’s success. Early liquidity providers register their contributions manually, earning proportional rewards in HAL, with plans to evolve into tokenized liquidity pool models as the system scales.
-
-As the platform grows, HAL’s utility extends to funding proposals, incentivizing community engagement, and supporting key infrastructure like Resource Credit management. Its economy is built to align incentives, ensuring every participant—from app users to liquidity providers to governance contributors—can shape and benefit from the platform’s success. HAL is not just a token; it is the foundation of a circular, utility-driven economy designed to evolve alongside the Hive Auto Ledger.
 
 ## Hive Investment Bot
+
+These two original Python sketches are retained as dated research material. They have **not** been qualified against current Hive APIs, fund custody, exception handling, order execution, rates, costs or trading risk, and should not be run with funded accounts without the original software and operational receiving process.
 
 ### Version 0.0.1
 

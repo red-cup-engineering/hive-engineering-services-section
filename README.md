@@ -25,6 +25,12 @@ The [June 12 agent/fleet architecture](content/text/documents/articles/notes/rec
 
 The [internal-market observation](content/text/documents/specifications/observe-hive-internal-market-work-order.md) and [signed-message verification](content/text/documents/specifications/verify-hive-signed-message-work-order.md) work orders retain their distinct requirements. Current implementations and receiving obligations belong to their own selected source repositories, including `services/hive-blockchain-client-service`, `services/hive-ledger-services-section`, and `services/verify-hive-signed-message-service`.
 
+## Historical HAL proposals: one maintained reading
+
+The [2025 Hive Auto Ledger product and token note](content/text/documents/notes/hal/hive-auto-ledger-product-note.md) is the active *historical reading* of the proposed HAL wallet/market roadmap and retained investment-bot sketches. Read its [HAL governance-token proposal](content/text/documents/notes/hal/hive-auto-ledger-product-note.md#hal), [HLDSHBD derivative proposal](content/text/documents/notes/hal/hive-auto-ledger-product-note.md#hldshbd), or [historical bot sketches](content/text/documents/notes/hal/hive-auto-ledger-product-note.md#hive-investment-bot) without keeping four parallel descriptions of the same proposal. The older overview, token note, and HBD-derivative snippet are recoverable from Git history; their distinct source wording was compared before retirement.
+
+[HiveMeta](content/text/documents/notes/hal/HiveMeta.md) is a **separate historical account-metadata curation proposal** and remains independently readable. Neither HAL nor HiveMeta's original concept notes prove a deployed asset, audited smart contract, running automated strategy, or current account state. The original 2025 HAL manuscript remains in `lib/legacy/emsenn-2025-12-15-hive-auto-ledger/index.md` as source custody, not a competing actively maintained product note.
+
 ## Historical recovery
 
 The earlier source restorations are held at `lib/legacy/2026-06-14-291cf22` (restore commit `291cf22`), `lib/legacy/2026-06-16-4a3582a` (`4a3582a`) and `lib/legacy/2026-06-17-0b8d657` (`0b8d657`), recovered from 561-group/bare-cedar-fog history. Those paths are custody evidence, not alternative live package owners.
