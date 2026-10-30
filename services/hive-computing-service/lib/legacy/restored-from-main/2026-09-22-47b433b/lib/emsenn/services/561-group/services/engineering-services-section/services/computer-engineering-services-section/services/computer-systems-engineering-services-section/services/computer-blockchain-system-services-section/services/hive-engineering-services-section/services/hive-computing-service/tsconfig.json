@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es2023",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["es2023"],
+    "types": ["node"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@emsenn/computing-with-hive": ["./src/index.mts"],
+      "@emsenn/computing-with-hive/client": ["./src/client.mts"],
+      "@emsenn/computing-with-hive/rpc": ["./src/rpc.mts"],
+      "@emsenn/computing-with-hive/chain": ["./src/chain.mts"],
+      "@emsenn/computing-with-hive/wallet": ["./src/wallet.mts"],
+      "@emsenn/computing-with-hive/computing/content": ["./src/computing/content/index.mts"],
+      "@emsenn/computing-with-hive/computing/curation": ["./src/computing/curation/index.mts"],
+      "@emsenn/computing-with-hive/computing/market": ["./src/computing/market/index.mts"],
+      "@emsenn/computing-with-hive/computing/analysis": ["./src/computing/analysis/index.mts"],
+      "@emsenn/computing-with-hive/computing/logic": ["./src/computing/logic/index.mts"],
+      "@emsenn/computing-with-hive/computing/geometry": ["./src/computing/geometry/index.mts"],
+      "@emsenn/computing-with-hive/computing/decision": ["./src/computing/decision/index.mts"],
+      "@emsenn/computing-with-hive/computing/execution": ["./src/computing/execution/index.mts"],
+      "@emsenn/computing-with-hive/computing/emission": ["./src/computing/emission/index.mts"],
+      "@emsenn/computing-with-hive/codecs/engine": ["./src/codecs/engine.mts"],
+      "@emsenn/computing-with-hive/codecs/engine/market": ["./src/codecs/engine/market.mts"],
+      "@emsenn/computing-with-hive/codecs/engine/pools": ["./src/codecs/engine/pools.mts"],
+      "@emsenn/computing-with-hive/computing/topology": ["./src/computing/topology/index.mts"],
+      "@emsenn/computing-with-hive/scripts": ["./scripts/index.mts"]
+    },
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.mts", "scripts/**/*.mts"]
+}
