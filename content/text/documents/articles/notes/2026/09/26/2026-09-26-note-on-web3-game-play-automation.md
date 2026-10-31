@@ -89,7 +89,7 @@ what "verified on chain" means here.
 ## Deliberately not automated (existing decisions this session did not change)
 
 - **Splinterlands** — 54 cards (9 modern, undelegated), energy 49, rating 260 (65 battles, 29
-  wins). Splinterlands' own ToS §1.A.5/§1.A.6 prohibit bot/script play; the house
+  wins). Splinterlands' own ToS §1.A.5/§1.A.6 prohibit bot/script play; the Group
   `splinterlands-services-section` package never built a battle-submission path on purpose (see its
   README). This session confirmed that boundary is still exactly where the existing code left it and
   did not cross it.
@@ -98,7 +98,7 @@ what "verified on chain" means here.
   live surface is a one-time SIM→SWAP.HIVE pool exit quoted today at 0.41064080 SWAP.HIVE minimum —
   a liquidation decision for the founder to make once, not a daily-play target.
 - **HashKings** — `emsenn0` holds 18 HKFARM NFTs; `michael561` holds none and zero BUDS/HKWATER/MOTA.
-  The game's web client redirects to a parked `/lander` page; the house package only classifies
+  The game's web client redirects to a parked `/lander` page; the Group package only classifies
   custody (`preserve-custody` / `review-recovery`), with no action path at all — nothing to run on a
   schedule.
 
@@ -124,7 +124,7 @@ what "verified on chain" means here.
 ## What needs the founder
 
 - The `aagaard` release deployed on cold-red-gate (`aagaard-0.4.6`) is stale against this repo's
-  `hive-fleet-operations-service@0.4.10`: several house packages the current source imports under
+  `hive-fleet-operations-service@0.4.10`: several Group packages the current source imports under
   consolidated names (e.g. `@red-cup-engineering/computer-code-engineering-services-section`,
   `@red-cup-engineering/computer-data-engineering-services-section`) 404 against
   `registry.561.group`/the local verdaccio mirror on cold-red-gate — they have not been published
@@ -147,7 +147,7 @@ built, matching what the existing code already enforces as guard code today:
   `assertHoloZingApiMutationAllowed`, unconditionally.
 - Any Hive wallet MUST NOT submit a Splinterlands battle, team, or surrender custom_json
   (`sm_find_match`/`sm_submit_team`/`sm_surrender`) — a ToS §1.A.5/§1.A.6 condition, not a capital
-  one; the house package simply never built the capability.
+  one; the Group package simply never built the capability.
 - `michael561` MUST NOT unstake, undelegate, transfer, or trade WORKERBEE or BEE through the
   automated yield path — `planWorkerBeeYield` only ever plans the one stake-and-delegate batch.
 - `michael561` MUST NOT delegate or spend more than 10.00000 WORKERBEE through the automated yield
